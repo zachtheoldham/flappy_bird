@@ -1,0 +1,20 @@
+/* Add custom font for score/messages */
+/* @font-face is removed as we use standard monospace now */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* Match the game's sky color for consistency */
+    background-color: #4a90e2; /* Updated to match COLOR_SKY */
+    overflow: hidden; /* Prevent scrollbars */
+    font-family: "Courier New", Courier, monospace; /* Apply retro font globally */
+}
+
+canvas {
+    border: 2px solid black; /* Slightly thicker border */
+    /* Background handled by game drawing */
+    display: block; /* Prevents extra space below canvas */
+} 
